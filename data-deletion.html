@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Deletion Instructions – Meta Ads Manager Tool</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 60px auto; padding: 0 24px; color: #1a1a1a; line-height: 1.7; }
+    h1 { font-size: 2rem; margin-bottom: 4px; }
+    .meta { color: #666; font-size: 0.9rem; margin-bottom: 40px; }
+    h2 { font-size: 1.2rem; margin-top: 40px; border-bottom: 1px solid #eee; padding-bottom: 6px; }
+    a { color: #0066cc; }
+    .steps { background: #f7f7f7; border-left: 4px solid #0066cc; padding: 16px 24px; border-radius: 4px; margin: 20px 0; }
+    .steps ol { margin: 0; padding-left: 20px; }
+    .steps li { margin-bottom: 8px; }
+    .note { background: #fff8e1; border-left: 4px solid #f0a500; padding: 12px 20px; border-radius: 4px; margin: 20px 0; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <h1>Data Deletion Instructions</h1>
+  <p class="meta">Last updated: April 2, 2026</p>
+
+  <p>The <strong>Meta Ads Manager Tool</strong> is a private, internal application that does not store Facebook user data on external servers. However, if you wish to remove any data associated with this application's Facebook App from Meta's systems, follow the instructions below.</p>
+
+  <div class="note">
+    <strong>Note:</strong> Because this application uses a System User token (not Facebook Login for end users), no personal user data is collected or stored by this application. The steps below apply to revoking application permissions within Meta's platform.
+  </div>
+
+  <h2>How to Remove App Permissions from Your Facebook Account</h2>
+
+  <p>To delete all data associated with this application and revoke its access to your Facebook account:</p>
+
+  <div class="steps">
+    <ol>
+      <li>Log in to your <a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook account</a>.</li>
+      <li>Go to <strong>Settings &amp; Privacy</strong> → <strong>Settings</strong>.</li>
+      <li>In the left sidebar, click <strong>Apps and Websites</strong>.</li>
+      <li>Find <strong>Meta Ads Manager Tool</strong> in the list of active apps.</li>
+      <li>Click <strong>Remove</strong> next to the app.</li>
+      <li>Check the box that says <strong>"Also delete all activity this app has posted on your behalf"</strong> if shown.</li>
+      <li>Click <strong>Remove</strong> to confirm.</li>
+    </ol>
+  </div>
+
+  <h2>For Business Manager / System User Access</h2>
+
+  <p>If this application was authorized via a System User in Meta Business Manager:</p>
+
+  <div class="steps">
+    <ol>
+      <li>Go to <a href="https://business.facebook.com/settings" target="_blank" rel="noopener">Meta Business Manager Settings</a>.</li>
+      <li>Navigate to <strong>Users</strong> → <strong>System Users</strong>.</li>
+      <li>Select the System User associated with this application.</li>
+      <li>Click <strong>Remove</strong> or revoke the access token by clicking <strong>Generate New Token</strong> (this invalidates the old one).</li>
+    </ol>
+  </div>
+
+  <h2>What Data Is Deleted</h2>
+
+  <p>When you remove the app or revoke the System User token:</p>
+  <ul>
+    <li>All API access permissions granted to this application are immediately revoked</li>
+    <li>Any tokens associated with this application are invalidated</li>
+    <li>No residual data needs to be deleted from our servers, as this application does not persist Facebook data externally</li>
+  </ul>
+
+  <h2>Contact Us</h2>
+  <p>If you have questions about data deletion or need further assistance, please contact: <a href="mailto:marce@salvatierra.dev">marce@salvatierra.dev</a></p>
+
+  <p><a href="privacy">← Back to Privacy Policy</a></p>
+</body>
+</html>
