@@ -3,70 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Data Deletion Instructions – Meta Ads Manager Tool</title>
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 60px auto; padding: 0 24px; color: #1a1a1a; line-height: 1.7; }
-    h1 { font-size: 2rem; margin-bottom: 4px; }
-    .meta { color: #666; font-size: 0.9rem; margin-bottom: 40px; }
-    h2 { font-size: 1.2rem; margin-top: 40px; border-bottom: 1px solid #eee; padding-bottom: 6px; }
-    a { color: #0066cc; }
-    .steps { background: #f7f7f7; border-left: 4px solid #0066cc; padding: 16px 24px; border-radius: 4px; margin: 20px 0; }
-    .steps ol { margin: 0; padding-left: 20px; }
-    .steps li { margin-bottom: 8px; }
-    .note { background: #fff8e1; border-left: 4px solid #f0a500; padding: 12px 20px; border-radius: 4px; margin: 20px 0; font-size: 0.95rem; }
-  </style>
+  <title>Data Deletion — Stark Paid Media</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Data Deletion Instructions</h1>
-  <p class="meta">Last updated: April 2, 2026</p>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <p class="brand"><a href="index.html">Stark Paid Media · 21Shift</a></p>
+      <nav class="site-nav" aria-label="Legal documents">
+        <a href="index.html">Legal home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="data-deletion.html">Data Deletion</a>
+      </nav>
+    </div>
+  </header>
 
-  <p>The <strong>Meta Ads Manager Tool</strong> is a private, internal application that does not store Facebook user data on external servers. However, if you wish to remove any data associated with this application's Facebook App from Meta's systems, follow the instructions below.</p>
+  <main class="page-shell">
+    <p class="eyebrow">Data Deletion</p>
+    <h1>Data Deletion</h1>
+    <p class="meta">Last updated: August 11, 2026</p>
+    <p class="lede">These instructions explain how to request deletion of personal data processed by Stark Paid Media, operated by <strong>21Shift SpA</strong> under the <strong>21Shift</strong> brand in Chile.</p>
 
-  <div class="note">
-    <strong>Note:</strong> Because this application uses a System User token (not Facebook Login for end users), no personal user data is collected or stored by this application. The steps below apply to revoking application permissions within Meta's platform.
-  </div>
+    <section>
+      <h2>Submit a Deletion Request</h2>
+      <p>Email <a href="mailto:info@21shift.com?subject=Stark%20Paid%20Media%20Data%20Deletion%20Request">info@21shift.com</a> with the subject line <strong>Stark Paid Media Data Deletion Request</strong>. We will review requests concerning personal data processed in connection with authorized paid-media analysis and reporting.</p>
+      <aside class="callout callout--warning">
+        <strong>Do not send passwords or access tokens.</strong>
+      </aside>
+    </section>
 
-  <h2>How to Remove App Permissions from Your Facebook Account</h2>
+    <section>
+      <h2>What to Include</h2>
+      <p>Please identify the relevant person, organization, Page, or ad account, and explain your relationship to it. Include enough detail for us to locate the relevant information, such as the organization name, Page name, or ad account name. Do not include credentials, passwords, or access tokens.</p>
+    </section>
 
-  <p>To delete all data associated with this application and revoke its access to your Facebook account:</p>
+    <section>
+      <h2>Verification and Response Time</h2>
+      <p>21Shift SpA may verify your identity and authority before acting on a request, particularly where the request concerns an organization, Page, or ad account. Our target response period is 30 calendar days, subject to applicable law and permitted extensions.</p>
+    </section>
 
-  <div class="steps">
-    <ol>
-      <li>Log in to your <a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook account</a>.</li>
-      <li>Go to <strong>Settings &amp; Privacy</strong> → <strong>Settings</strong>.</li>
-      <li>In the left sidebar, click <strong>Apps and Websites</strong>.</li>
-      <li>Find <strong>Meta Ads Manager Tool</strong> in the list of active apps.</li>
-      <li>Click <strong>Remove</strong> next to the app.</li>
-      <li>Check the box that says <strong>"Also delete all activity this app has posted on your behalf"</strong> if shown.</li>
-      <li>Click <strong>Remove</strong> to confirm.</li>
-    </ol>
-  </div>
+    <section>
+      <h2>Revoke Access in Meta Business Settings</h2>
+      <p>Business administrators may independently remove access in Meta Business Settings. Depending on their configuration, they can:</p>
+      <ul class="steps">
+        <li>remove assigned Pages or ad accounts from the relevant person, System User, or app assignment;</li>
+        <li>remove the System User or app assignment that has access to the affected assets; and</li>
+        <li>explicitly revoke relevant access tokens in Meta Business Settings.</li>
+      </ul>
+      <p>Generating a new token is not a substitute for explicitly revoking an existing token. The current reporting module uses read-only Meta Marketing API access through <code>ads_read</code>; it cannot create, edit, pause, activate, or delete ads or related entities.</p>
+    </section>
 
-  <h2>For Business Manager / System User Access</h2>
+    <section>
+      <h2>Facebook Login, If Enabled</h2>
+      <p>Facebook Login is not part of the current reporting module. If Facebook Login is separately enabled and explicitly authorized in the future, a user may remove that app connection through Facebook Settings &amp; Privacy, then Settings, Apps and Websites, by selecting the relevant app and choosing Remove. This is separate from business asset and token controls in Meta Business Settings.</p>
+    </section>
 
-  <p>If this application was authorized via a System User in Meta Business Manager:</p>
+    <section>
+      <h2>What We Delete</h2>
+      <p>After a valid request is verified, we delete or de-identify applicable cached API data, exports, message content, and reports containing personal data where required. Message content is relevant only if the optional Page Messaging module is separately implemented and explicitly authorized with separate credentials and controls.</p>
+    </section>
 
-  <div class="steps">
-    <ol>
-      <li>Go to <a href="https://business.facebook.com/settings" target="_blank" rel="noopener">Meta Business Manager Settings</a>.</li>
-      <li>Navigate to <strong>Users</strong> → <strong>System Users</strong>.</li>
-      <li>Select the System User associated with this application.</li>
-      <li>Click <strong>Remove</strong> or revoke the access token by clicking <strong>Generate New Token</strong> (this invalidates the old one).</li>
-    </ol>
-  </div>
+    <section>
+      <h2>Information We May Retain</h2>
+      <p>We may retain aggregated or de-identified information and records needed for legal, contractual, security, fraud-prevention, or dispute purposes where permitted. Retained information will be limited to what is reasonably necessary for those purposes.</p>
+    </section>
 
-  <h2>What Data Is Deleted</h2>
+    <section>
+      <h2>Confirmation and Contact</h2>
+      <p>We will confirm completion using the requester's verified contact channel. For questions about this process, contact <a href="mailto:info@21shift.com">info@21shift.com</a>.</p>
+    </section>
+  </main>
 
-  <p>When you remove the app or revoke the System User token:</p>
-  <ul>
-    <li>All API access permissions granted to this application are immediately revoked</li>
-    <li>Any tokens associated with this application are invalidated</li>
-    <li>No residual data needs to be deleted from our servers, as this application does not persist Facebook data externally</li>
-  </ul>
-
-  <h2>Contact Us</h2>
-  <p>If you have questions about data deletion or need further assistance, please contact: <a href="mailto:marce@salvatierra.dev">marce@salvatierra.dev</a></p>
-
-  <p><a href="privacy">← Back to Privacy Policy</a></p>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>Questions? Contact <a href="mailto:info@21shift.com">info@21shift.com</a>.</p>
+    </div>
+  </footer>
 </body>
 </html>
