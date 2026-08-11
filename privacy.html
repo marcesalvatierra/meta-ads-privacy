@@ -3,61 +3,104 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy – Meta Ads Manager Tool</title>
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 60px auto; padding: 0 24px; color: #1a1a1a; line-height: 1.7; }
-    h1 { font-size: 2rem; margin-bottom: 4px; }
-    .meta { color: #666; font-size: 0.9rem; margin-bottom: 40px; }
-    h2 { font-size: 1.2rem; margin-top: 40px; border-bottom: 1px solid #eee; padding-bottom: 6px; }
-    a { color: #0066cc; }
-  </style>
+  <title>Privacy Policy — Stark Paid Media</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p class="meta">Last updated: April 2, 2026</p>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <p class="brand"><a href="index.html">Stark Paid Media · 21Shift</a></p>
+      <nav class="site-nav" aria-label="Legal documents">
+        <a href="index.html">Legal home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="data-deletion.html">Data Deletion</a>
+      </nav>
+    </div>
+  </header>
 
-  <p>This Privacy Policy describes how the <strong>Meta Ads Manager Tool</strong> (the "Application") collects, uses, and handles information when you use it to manage Meta (Facebook) advertising accounts.</p>
+  <main class="page-shell">
+    <p class="eyebrow">Privacy Policy</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: August 11, 2026</p>
+    <p class="lede">This policy explains how Stark Paid Media handles information in connection with authorized paid-media analysis and reporting.</p>
 
-  <h2>1. About This Application</h2>
-  <p>The Meta Ads Manager Tool is a private, internal application used exclusively by its owner to manage, monitor, and optimize Meta advertising campaigns via the Meta Marketing API. It is not a public-facing product and does not serve end-user customers.</p>
+    <section>
+      <h2>Who We Are</h2>
+      <p>Stark Paid Media is operated by <strong>21Shift SpA</strong> under the <strong>21Shift</strong> brand in Chile.</p>
+    </section>
 
-  <h2>2. Information We Access</h2>
-  <p>The Application accesses the following data through the Meta Marketing API, solely on behalf of the authorized account owner:</p>
-  <ul>
-    <li>Ad account information (account name, currency, timezone, status)</li>
-    <li>Campaign, ad set, and ad data (names, budgets, targeting, status)</li>
-    <li>Ad performance metrics and insights (impressions, clicks, spend, ROAS)</li>
-    <li>Business Manager data associated with the authenticated system user</li>
-  </ul>
+    <section>
+      <h2>Scope of This Policy</h2>
+      <p>Stark Paid Media supports authorized paid-media analysis and reporting for 21Shift and its clients. This policy applies to information processed through the application and its current integrations.</p>
+    </section>
 
-  <h2>3. How We Use the Information</h2>
-  <p>All data accessed through the Meta Marketing API is used exclusively to:</p>
-  <ul>
-    <li>Generate performance reports and analytics for the account owner</li>
-    <li>Create, update, and manage advertising campaigns on behalf of the account owner</li>
-    <li>Provide consulting and optimization recommendations</li>
-  </ul>
-  <p>We do not sell, share, transfer, or disclose any data to third parties.</p>
+    <section>
+      <h2>Information We Process</h2>
+      <p>Advertising data may include account metadata; campaign, ad set, and ad names and status; budgets; targeting configuration; creative metadata; delivery information; and performance metrics. We process business or Page metadata only when the corresponding permission and asset access have been granted.</p>
+    </section>
 
-  <h2>4. Data Storage</h2>
-  <p>The Application does not persistently store Meta user data. API responses are processed in memory and displayed to the account owner. No personal data is written to external databases or third-party services.</p>
+    <section>
+      <h2>How We Use Information</h2>
+      <p>We use information for reporting, analysis, troubleshooting, security, client support, and separately authorized messaging operations. We do not sell Meta Platform Data or use it for unrelated advertising.</p>
+    </section>
 
-  <h2>5. Authentication &amp; Security</h2>
-  <p>The Application authenticates using a System User Access Token generated through Meta Business Manager. This token is stored locally in environment variables and is never transmitted to any external service other than the official Meta Graph API endpoints.</p>
+    <section>
+      <h2>Read-Only Paid Media Reporting Module</h2>
+      <p>The current reporting integration uses read-only Meta Marketing API access through <code>ads_read</code>. It can retrieve authorized advertising information for analysis and reporting, but cannot create, edit, pause, activate, or delete ads or related entities.</p>
+    </section>
 
-  <h2>6. Third-Party Services</h2>
-  <p>The Application communicates exclusively with Meta's Graph API (<code>graph.facebook.com</code>). No other third-party services receive any data.</p>
+    <section>
+      <h2>Optional Page Messaging Module</h2>
+      <p>The Optional Page Messaging Module is inactive unless it is separately implemented and explicitly authorized. If enabled, it may process message content, sender identifiers, timestamps, attachments, Page or Instagram account metadata, and authorized replies. Any such module requires separate credentials and controls.</p>
+    </section>
 
-  <h2>7. Data Retention</h2>
-  <p>No user data is retained by the Application beyond the duration of an active API session. Locally cached credentials (access tokens) are stored only on the account owner's device and can be deleted at any time.</p>
+    <section>
+      <h2>Service Providers and Disclosures</h2>
+      <p>Information may be processed by Meta, OpenAI/Codex, and infrastructure or professional service providers necessary to operate the service. These legal pages are hosted on GitHub Pages, which may process technical request logs. We may disclose information where necessary to provide the service, meet legal obligations, protect rights and security, or address disputes.</p>
+    </section>
 
-  <h2>8. Your Rights</h2>
-  <p>As this Application is used solely by its owner to manage their own ad accounts, standard data subject rights (access, deletion, portability) are fully within the owner's control via Meta Business Manager settings. To request deletion of any data associated with Facebook Login, see our <a href="data-deletion">Data Deletion Instructions</a>.</p>
+    <section>
+      <h2>Data Storage and Retention</h2>
+      <p>Raw API responses are generally transient but may be temporarily retained for troubleshooting or reproducibility. Derived reports may be stored locally for client service and business records. We retain information only as reasonably necessary for the client relationship, contractual obligations, legal compliance, security, or disputes.</p>
+    </section>
 
-  <h2>9. Changes to This Policy</h2>
-  <p>This policy may be updated periodically. Any changes will be reflected on this page with an updated date.</p>
+    <section>
+      <h2>Security</h2>
+      <p>We use reasonable administrative and technical safeguards designed to protect information. No method of transmission or storage can be guaranteed absolutely secure.</p>
+    </section>
 
-  <h2>10. Contact</h2>
-  <p>For questions regarding this privacy policy, please contact: <a href="mailto:marce@salvatierra.dev">marce@salvatierra.dev</a></p>
+    <section>
+      <h2>International Processing</h2>
+      <p>This international processing may occur outside the requester's country where our service providers operate, subject to applicable safeguards.</p>
+    </section>
+
+    <section>
+      <h2>Your Choices and Rights</h2>
+      <p>Subject to applicable law, you may request access, correction, deletion, restriction, or objection by contacting <a href="mailto:info@21shift.com">info@21shift.com</a>. We may verify your identity and authority before responding.</p>
+    </section>
+
+    <section>
+      <h2>Data Deletion</h2>
+      <p>For deletion requests and instructions for revoking authorized access, see our <a href="data-deletion.html">Data Deletion</a> page.</p>
+    </section>
+
+    <section>
+      <h2>Changes to This Policy</h2>
+      <p>We may update this policy from time to time. We will post the updated version here and revise the last-updated date.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>For questions about this policy, contact <a href="mailto:info@21shift.com">info@21shift.com</a>. This policy is governed by the laws of Chile, and matters related to it are subject to the jurisdiction of the competent courts of Chile.</p>
+      <p>Please also review our <a href="terms.html">Terms of Service</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>Questions? Contact <a href="mailto:info@21shift.com">info@21shift.com</a>.</p>
+    </div>
+  </footer>
 </body>
 </html>
