@@ -44,14 +44,14 @@
     </section>
 
     <section>
-      <h2>Revoke Access in Meta Business Settings</h2>
+      <h2>Remove Business Access and Revoke Tokens</h2>
       <p>Business administrators may independently remove access in Meta Business Settings. Depending on their configuration, they can:</p>
       <ul class="steps">
         <li>remove assigned Pages or ad accounts from the relevant person, System User, or app assignment;</li>
-        <li>remove the System User or app assignment that has access to the affected assets; and</li>
-        <li>explicitly revoke relevant access tokens in Meta Business Settings.</li>
+        <li>remove the System User or app assignment that has access to the affected assets.</li>
       </ul>
-      <p>Generating a new token is not a substitute for explicitly revoking an existing token. The current reporting module uses read-only Meta Marketing API access through <code>ads_read</code>; it cannot create, edit, pause, activate, or delete ads or related entities.</p>
+      <p>Removing those assignments does not itself revoke an access token. Separately, explicitly revoke each relevant access token through Meta's supported token-revocation controls. Generating a new token does not revoke an existing token and is not a substitute for explicit revocation.</p>
+      <p>The current reporting module uses read-only Meta Marketing API access through <code>ads_read</code>; it cannot create, edit, pause, activate, or delete ads or related entities.</p>
     </section>
 
     <section>
